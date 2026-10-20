@@ -74,8 +74,8 @@ js/core/                    dates, priority order, keyword rules, saved state (t
 ```
 
 ## Credits
-Built by Sonika Chandra with help from Claude (Anthropic) for code and explanations.
-
+-Built by Sonika Chandra with help from Claude (Anthropic) for code and explanations.
+-Name and idea inspiration from a character in Toby Fox's Deltarune
 ## Licence
 
 MIT. See [LICENSE](LICENSE).
