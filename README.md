@@ -1,4 +1,4 @@
-# Tasque 1.5
+# Tasque 1.5(CONSIDERING FEATURES TO ADD)
 
 **Your Gmail and Google Classroom in one list, sorted by what's due.**
 Gemini reads the subject lines, invents groups for them, and finds the event
