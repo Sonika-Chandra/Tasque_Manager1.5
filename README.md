@@ -73,6 +73,9 @@ js/ai/gemini.js             grouping with Gemini
 js/core/                    dates, priority order, keyword rules, saved state (tested)
 ```
 
+## Credits
+Built by Sonika Chandra with help from Claude (Anthropic) for code and explanations.
+
 ## Licence
 
 MIT. See [LICENSE](LICENSE).
