@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+*.log
+
+# Never commit Google secrets or keys
+client_secret*.json
+credentials*.json
+*.pem
+.env
+.env.*
