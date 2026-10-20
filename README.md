@@ -36,6 +36,8 @@ Classroom post arrives after 20 seconds so you can see notifications.
 
 To use your real account, follow **[SETUP.md](SETUP.md)** (about 10 minutes, once).
 
+Requires set up of a Google Cloud Project connected to the mail you wish to login in with followed by enabling Gmail and Google classroom API and then creating a Client ID of type web application putting under javascript URI: http://localhost:8000 and finally copying the client ID which you should not share with anyone and paste into the request box when you sign up/in with your gmail
+
 For Gemini grouping, get a free key at <https://aistudio.google.com/apikey> and
 press **Add Gemini key**.
 
