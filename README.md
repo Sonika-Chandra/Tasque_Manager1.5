@@ -35,8 +35,25 @@ Open <http://localhost:8000> and press **Try the demo**. In the demo, a "new"
 Classroom post arrives after 20 seconds so you can see notifications.
 
 To use your real account, follow **[SETUP.md](SETUP.md)** (about 10 minutes, once).
+## Using your own Google account
 
-Requires set up of a Google Cloud Project connected to the mail you wish to login in with followed by enabling Gmail and Google classroom API and then creating a Client ID of type web application putting under javascript URI: http://localhost:8000 and finally copying the client ID which you should not share with anyone and paste into the request box when you sign up/in with your gmail
+Demo mode works with no setup. To read your own Gmail and Classroom, you need a free
+Google Cloud project (about 10 minutes, once). Full steps with screenshots-level detail
+are in **[SETUP.md](SETUP.md)**; in short:
+
+1. **Create a project** at [console.cloud.google.com](https://console.cloud.google.com/) (e.g. named `Tasque`).
+2. **Enable two APIs**: *APIs & Services → Library* → enable **Gmail API** and **Google Classroom API**.
+3. **Set up the consent screen**: *OAuth consent screen* → **External** → add the four
+   read-only scopes (`gmail.readonly`, `classroom.courses.readonly`,
+   `classroom.coursework.me.readonly`, `classroom.announcements.readonly`) →
+   add your email under **Test users** → leave the app in **Testing**.
+4. **Create a Client ID**: *Credentials → Create credentials → OAuth client ID* →
+   type **Web application** → under **Authorized JavaScript origins** add
+   `http://localhost:8000` → copy the Client ID (ends in `.apps.googleusercontent.com`).
+5. **Paste it into Tasque**: run `python -m http.server 8000`, open the page,
+   click **Set up Google sign-in**, paste the Client ID and sign in.
+
+You'll see *"Google hasn't verified this app"*. That's normal for an app in Testing; click **Continue**.
 
 For Gemini grouping, get a free key at <https://aistudio.google.com/apikey> and
 press **Add Gemini key**.
